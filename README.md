@@ -77,3 +77,41 @@ Real-World Testing: Trained on IPL seasons 2008–2016, tested on 2017, and pred
 
 
 Extensible: Easy to integrate new features (e.g., player stats, weather) or advanced models.
+
+
+
+
+## Dataset
+
+
+
+The dataset (ipl.csv) contains ball-by-ball IPL match data from 2008 to 2017, with columns:
+
+
+
+
+
+bat_team, bowl_team: Batting and bowling teams.
+
+
+
+runs, wickets, overs: Current match state.
+
+
+
+runs_last_5, wickets_last_5: Performance in the last 5 overs.
+
+
+
+total: Final first innings score (target variable).
+
+Preprocessing:
+
+
+Removed inconsistent teams (e.g., Deccan Chargers).
+
+Excluded first 5 overs for stable predictions.
+
+Converted date to datetime and one-hot encoded teams.
+
+Source: Available in the repository or downloadable from Kaggle (replace with actual link if applicable).
